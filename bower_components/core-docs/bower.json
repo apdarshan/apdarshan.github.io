@@ -1,0 +1,8 @@
+{
+  "name": "core-docs",
+  "private": true,
+  "dependencies": {
+    "core-component-page": "Polymer/core-component-page#0.2.3"
+  },
+  "version": "0.2.3"
+}
