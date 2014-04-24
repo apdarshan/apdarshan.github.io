@@ -4,12 +4,13 @@
     <!-- 1. Load platform.js for polyfill support. -->
     <script src="bower_components/platform/platform.js"></script>
     <!-- 2. Use an HTML Import to bring in the element. -->
+	<link rel="stylesheet" href="css/animate.css">
     <link rel="import"
       href="bower_components/polymer-ajax/polymer-ajax.html">
     <link rel="import"
     href="bower_components/polymer-ui-tabs/polymer-ui-tabs.html">
     </head>
-    <body>
+    <body style="width: 500px;margin: 0 auto;">
       <!-- 3. Declare the element. Configure using its attributes. -->
       <polymer-ajax url="http://gdata.youtube.com/feeds/api/videos/" auto
               params='{"alt":"json", "q":"chrome"}' handleAs="json"></polymer-ajax>
@@ -34,6 +35,75 @@
       });
       ajax.go(); // Call its API methods.
       });
+	setInterval(function(){
+var classes = [ "bounce",
+  "flash",
+  "pulse",
+  "rubberBand",
+  "shake",
+  "swing",
+  "tada",
+  "wobble",
+  "bounceIn",
+  "bounceInDown",
+  "bounceInLeft",
+  "bounceInRight",
+  "bounceInUp",
+  "bounceOut",
+  "bounceOutDown",
+  "bounceOutLeft",
+  "bounceOutRight",
+  "bounceOutUp",
+  "fadeIn",
+  "fadeInDown",
+  "fadeInDownBig",
+  "fadeInLeft",
+  "fadeInLeftBig",
+  "fadeInRight",
+  "fadeInRightBig",
+  "fadeInUp",
+  "fadeInUpBig",
+  "fadeOut",
+  "fadeOutDown",
+  "fadeOutDownBig",
+  "fadeOutLeft",
+  "fadeOutLeftBig",
+  "fadeOutRight",
+  "fadeOutRightBig",
+  "fadeOutUp",
+  "fadeOutUpBig",
+  "flip",
+  "flipInX",
+  "flipInY",
+  "flipOutX",
+  "flipOutY",
+  "lightSpeedIn",
+  "lightSpeedOut",
+  "rotateIn",
+  "rotateInDownLeft",
+  "rotateInDownRight",
+  "rotateInUpLeft",
+  "rotateInUpRight",
+  "rotateOut",
+  "rotateOutDownLeft",
+  "rotateOutDownRight",
+  "rotateOutUpLeft",
+  "rotateOutUpRight",
+  "slideInDown",
+  "slideInLeft",
+  "slideInRight",
+  "slideOutLeft",
+  "slideOutRight",
+  "slideOutUp",
+  "hinge",
+  "rollIn",
+  "rollOut"];
+var tt = document.querySelector(".polymer-selected");
+tt.className = "";
+tt.classList.add("polymer-selected");
+tt.classList.add(classes[Math.floor((Math.random()* classes.length)+0)]);	
+tt.classList.add("animated");	
+}, 3000);
       </script>
     </body>
   </html>
