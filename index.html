@@ -10,7 +10,7 @@
     <link rel="import"
     href="bower_components/polymer-ui-tabs/polymer-ui-tabs.html">
     </head>
-    <body style="width: 500px;margin: 300px auto;">
+    <body style="width: 500px;margin: 30px auto;">
       <!-- 3. Declare the element. Configure using its attributes. -->
       <polymer-ajax url="http://gdata.youtube.com/feeds/api/videos/" auto
               params='{"alt":"json", "q":"chrome"}' handleAs="json"></polymer-ajax>
@@ -23,6 +23,7 @@
         <span>using</span>
         <span>Animate</span>
       </polymer-ui-tabs>
+<img src="equis.jpg" style="text-align: center;margin: 30px;">
       <script>
       // Wait for 'polymer-ready'. Ensures the element is upgraded.
       window.addEventListener('polymer-ready', function(e) {
@@ -102,9 +103,14 @@ var classes = [ "bounce",
 var tt = document.querySelector(".polymer-selected");
 tt.className = "";
 tt.classList.add("polymer-selected");
-tt.classList.add(classes[Math.floor((Math.random()* classes.length)+0)]);	
+tt.classList.add(classes[Math.floor((Math.random() * classes.length)+0)]);	
 tt.classList.add("animated");	
 }, 3000);
       </script>
+<style>
+polymer-ui-tabs > .polymer-selected {
+border-radius: 32px;
+}
+</style>
     </body>
   </html>
