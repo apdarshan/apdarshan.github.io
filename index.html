@@ -10,17 +10,18 @@
     <link rel="import"
     href="bower_components/polymer-ui-tabs/polymer-ui-tabs.html">
     </head>
-    <body style="width: 500px;margin: 0 auto;">
+    <body style="width: 500px;margin: 300px auto;">
       <!-- 3. Declare the element. Configure using its attributes. -->
       <polymer-ajax url="http://gdata.youtube.com/feeds/api/videos/" auto
               params='{"alt":"json", "q":"chrome"}' handleAs="json"></polymer-ajax>
       <polymer-ui-tabs selected="3">
-        <span>Poly</span>
-        <span>mer</span>
+        <span>Polymer</span>
+        <span>Tabs</span>
         <span>by</span>
         <span>Darshan</span>
         <span>Prakash</span>
-        <span>Bye</span>
+        <span>using</span>
+        <span>Animate</span>
       </polymer-ui-tabs>
       <script>
       // Wait for 'polymer-ready'. Ensures the element is upgraded.
