@@ -4,116 +4,121 @@
     <!-- 1. Load platform.js for polyfill support. -->
     <script src="bower_components/platform/platform.js"></script>
     <!-- 2. Use an HTML Import to bring in the element. -->
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="import"
       href="bower_components/polymer-ajax/polymer-ajax.html">
-    <link rel="import"
-    href="bower_components/polymer-ui-tabs/polymer-ui-tabs.html">
-    </head>
-    <body style="width: 500px;margin: 30px auto;">
-      <!-- 3. Declare the element. Configure using its attributes. -->
-      <polymer-ajax url="http://gdata.youtube.com/feeds/api/videos/" auto
-              params='{"alt":"json", "q":"chrome"}' handleAs="json"></polymer-ajax>
-      <polymer-ui-tabs selected="3">
-        <span>Polymer</span>
-        <span>Tabs</span>
-        <span>by</span>
-        <span>Darshan</span>
-        <span>Prakash</span>
-        <span>using</span>
-        <span>Animate</span>
-      </polymer-ui-tabs>
-<!-- <img src="images/equis.jpg" style="text-align: center;margin: 30px;"> -->
-<img id="img2" src="images/ChristinaRinaldi.gif" style="text-align: center;margin: 30px;">
-      <script>
-      // Wait for 'polymer-ready'. Ensures the element is upgraded.
-      window.addEventListener('polymer-ready', function(e) {
-      var ajax = document.querySelector('polymer-ajax');
-      // Respond to events it fires.
-      ajax.addEventListener('polymer-response', function(e) {
-      console.log(this.response);
-      /*var tt= document.createElement("div");
-      tt.innerHTML = JSON.stringify(this.response);
-      document.body.appendChild(tt);*/
-      });
-      ajax.go(); // Call its API methods.
-      });
-	setInterval(function(){
-var classes = [ "bounce",
-  "flash",
-  "pulse",
-  "rubberBand",
-  "shake",
-  "swing",
-  "tada",
-  "wobble",
-  "bounceIn",
-  "bounceInDown",
-  "bounceInLeft",
-  "bounceInRight",
-  "bounceInUp",
-  "bounceOut",
-  "bounceOutDown",
-  "bounceOutLeft",
-  "bounceOutRight",
-  "bounceOutUp",
-  "fadeIn",
-  "fadeInDown",
-  "fadeInDownBig",
-  "fadeInLeft",
-  "fadeInLeftBig",
-  "fadeInRight",
-  "fadeInRightBig",
-  "fadeInUp",
-  "fadeInUpBig",
-  "fadeOut",
-  "fadeOutDown",
-  "fadeOutDownBig",
-  "fadeOutLeft",
-  "fadeOutLeftBig",
-  "fadeOutRight",
-  "fadeOutRightBig",
-  "fadeOutUp",
-  "fadeOutUpBig",
-  "flip",
-  "flipInX",
-  "flipInY",
-  "flipOutX",
-  "flipOutY",
-  "lightSpeedIn",
-  "lightSpeedOut",
-  "rotateIn",
-  "rotateInDownLeft",
-  "rotateInDownRight",
-  "rotateInUpLeft",
-  "rotateInUpRight",
-  "rotateOut",
-  "rotateOutDownLeft",
-  "rotateOutDownRight",
-  "rotateOutUpLeft",
-  "rotateOutUpRight",
-  "slideInDown",
-  "slideInLeft",
-  "slideInRight",
-  "slideOutLeft",
-  "slideOutRight",
-  "slideOutUp",
-  "hinge",
-  "rollIn",
-  "rollOut"];
-var tt = document.querySelector(".polymer-selected");
-tt.className = "";
-tt.classList.add("polymer-selected");
-tt.classList.add(classes[Math.floor((Math.random() * classes.length)+0)]);	
-tt.classList.add("animated");	
-}, 3000);
-      </script>
-<style>
-polymer-ui-tabs > .polymer-selected {
-border-radius: 32px;
-}
-</style>
-    </body>
-  </html>
+      <link rel="import"
+        href="bower_components/polymer-ui-tabs/polymer-ui-tabs.html">
+      </head>
+      <body>
+        <!-- 3. Declare the element. Configure using its attributes. -->
+        <polymer-ajax url="http://gdata.youtube.com/feeds/api/videos/" auto
+        params='{"alt":"json", "q":"chrome"}' handleAs="json"></polymer-ajax>
+        <span style="float: right;text-shadow: 1px 1px 4px rgb(119, 96, 96);font-size: 20px;color: rgb(58, 58, 179);"><a class="famous-link" href="famous/dist" target="_blank" style="color:light-blue;">Why am I Famous ?</a></span>
+        <div style="width: 500px;margin: 30px auto;">
+            <polymer-ui-tabs selected="3">
+            <span>Polymer</span>
+            <span>Tabs</span>
+            <span>by</span>
+            <span>Darshan</span>
+            <span>Prakash</span>
+            <span>using</span>
+            <span>Animate</span>
+            </polymer-ui-tabs>
+            
+            <iframe width="480" height="360" style="text-align: center;margin: 30px;" src="//www.youtube.com/embed/plhYVd2MgtA" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+
+
+        <script>
+        // Wait for 'polymer-ready'. Ensures the element is upgraded.
+        window.addEventListener('polymer-ready', function(e) {
+        var ajax = document.querySelector('polymer-ajax');
+        // Respond to events it fires.
+        ajax.addEventListener('polymer-response', function(e) {
+        console.log(this.response);
+        /*var tt= document.createElement("div");
+        tt.innerHTML = JSON.stringify(this.response);
+        document.body.appendChild(tt);*/
+        });
+        ajax.go(); // Call its API methods.
+        });
+          setInterval(function(){
+        var classes = [ "bounce",
+        "flash",
+        "pulse",
+        "rubberBand",
+        "shake",
+        "swing",
+        "tada",
+        "wobble",
+        "bounceIn",
+        "bounceInDown",
+        "bounceInLeft",
+        "bounceInRight",
+        "bounceInUp",
+        "bounceOut",
+        "bounceOutDown",
+        "bounceOutLeft",
+        "bounceOutRight",
+        "bounceOutUp",
+        "fadeIn",
+        "fadeInDown",
+        "fadeInDownBig",
+        "fadeInLeft",
+        "fadeInLeftBig",
+        "fadeInRight",
+        "fadeInRightBig",
+        "fadeInUp",
+        "fadeInUpBig",
+        "fadeOut",
+        "fadeOutDown",
+        "fadeOutDownBig",
+        "fadeOutLeft",
+        "fadeOutLeftBig",
+        "fadeOutRight",
+        "fadeOutRightBig",
+        "fadeOutUp",
+        "fadeOutUpBig",
+        "flip",
+        "flipInX",
+        "flipInY",
+        "flipOutX",
+        "flipOutY",
+        "lightSpeedIn",
+        "lightSpeedOut",
+        "rotateIn",
+        "rotateInDownLeft",
+        "rotateInDownRight",
+        "rotateInUpLeft",
+        "rotateInUpRight",
+        "rotateOut",
+        "rotateOutDownLeft",
+        "rotateOutDownRight",
+        "rotateOutUpLeft",
+        "rotateOutUpRight",
+        "slideInDown",
+        "slideInLeft",
+        "slideInRight",
+        "slideOutLeft",
+        "slideOutRight",
+        "slideOutUp",
+        "hinge",
+        "rollIn",
+        "rollOut"];
+        var tt = document.querySelector(".polymer-selected");
+        tt.className = "";
+        tt.classList.add("polymer-selected");
+          tt.classList.add(classes[Math.floor((Math.random() * classes.length)+0)]);
+          tt.classList.add("animated");
+        }, 3000);
+        </script>
+        <style>
+        polymer-ui-tabs > .polymer-selected {
+        border-radius: 32px;
+        }
+        </style>
+      </body>
+    </html>
